@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.dashboard {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &-wrapper {
+    align-items: center;
+
+    & > h1 {
+      color: $pink;
+      text-shadow: 0 0 4px;
+      animation: colorRaffle 4s linear 0s infinite;
+    }
+  }
+}
+
+@keyframes colorRaffle {
+  0% {
+    color: $pink;
+  }
+  25% {
+    color: $purple;
+  }
+  50% {
+    color: $blue;
+  }
+  75% {
+    color: $green;
+  }
+}
